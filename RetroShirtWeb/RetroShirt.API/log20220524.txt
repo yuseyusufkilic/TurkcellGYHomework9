@@ -1,0 +1,171 @@
+2022-05-24 19:03:45.180 +03:00 [INF] Now listening on: https://localhost:5001
+2022-05-24 19:03:45.204 +03:00 [INF] Now listening on: http://localhost:5000
+2022-05-24 19:03:47.385 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-24 19:03:47.385 +03:00 [INF] Hosting environment: Development
+2022-05-24 19:03:47.385 +03:00 [INF] Content root path: D:\C# Projects\RetroShirtWeb\RetroShirt.API
+2022-05-24 19:03:50.196 +03:00 [ERR] Products served at: 24.05.2022 19:03:50
+2022-05-24 19:03:55.348 +03:00 [INF] Application is shutting down...
+
+2022-05-24 19:18:04.277 +03:00 [INF] Now listening on: https://localhost:5001
+2022-05-24 19:18:04.309 +03:00 [INF] Now listening on: http://localhost:5000
+2022-05-24 19:18:06.672 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-24 19:18:06.673 +03:00 [INF] Hosting environment: Development
+2022-05-24 19:18:06.674 +03:00 [INF] Content root path: D:\C# Projects\RetroShirtWeb\RetroShirt.API
+2022-05-24 19:27:44.826 +03:00 [INF] Application is shutting down...
+2022-05-24 19:46:10.929 +03:00 [INF] Now listening on: https://localhost:5001
+2022-05-24 19:46:10.965 +03:00 [INF] Now listening on: http://localhost:5000
+2022-05-24 19:46:12.400 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-24 19:46:12.400 +03:00 [INF] Hosting environment: Development
+2022-05-24 19:46:12.400 +03:00 [INF] Content root path: D:\C# Projects\RetroShirtWeb\RetroShirt.API
+2022-05-24 19:47:53.570 +03:00 [ERR] Products served at: 24.05.2022 19:47:53
+2022-05-24 19:48:46.274 +03:00 [ERR] Failed executing DbCommand (39ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [CategoryTeams] ([CategoryId], [TeamId])
+VALUES (@p0, @p1);
+2022-05-24 19:48:46.487 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'RetroShirtDAL.Data.RetroShirtDBContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_CategoryTeams'. Cannot insert duplicate key in object 'dbo.CategoryTeams'. The duplicate key value is (3, 31).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:942b5ef6-ae9d-41f4-b203-d540a0fc74a4
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_CategoryTeams'. Cannot insert duplicate key in object 'dbo.CategoryTeams'. The duplicate key value is (3, 31).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:942b5ef6-ae9d-41f4-b203-d540a0fc74a4
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2022-05-24 19:48:46.496 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_CategoryTeams'. Cannot insert duplicate key in object 'dbo.CategoryTeams'. The duplicate key value is (3, 31).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:942b5ef6-ae9d-41f4-b203-d540a0fc74a4
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at RetroShirtDAL.Repositories.EFCategoryTeamRepository.addMany2Many(Product product) in D:\C# Projects\RetroShirtWeb\RetroShirtDAL\Repositories\EFCategoryTeamRepository.cs:line 26
+   at RetroShirt.Business.Concrete.CategoryTeamService.addMany2Many(ProductAddingRequest productDto) in D:\C# Projects\RetroShirtWeb\RetroShirt.Business\Concrete\CategoryTeamService.cs:line 27
+   at RetroShirt.API.Controllers.ProductsController.AddProduct(ProductAddingRequest productAddingRequest) in D:\C# Projects\RetroShirtWeb\RetroShirt.API\Controllers\ProductsController.cs:line 69
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-05-24 19:50:52.846 +03:00 [ERR] Products served at: 24.05.2022 19:50:52
+2022-05-24 19:52:23.799 +03:00 [ERR] Products served at: 24.05.2022 19:52:23
+2022-05-24 19:52:45.555 +03:00 [ERR] Products served at: 24.05.2022 19:52:45
+2022-05-24 19:52:46.448 +03:00 [ERR] Products served at: 24.05.2022 19:52:46
+2022-05-24 19:52:47.281 +03:00 [ERR] Products served at: 24.05.2022 19:52:47
+2022-05-24 19:52:47.453 +03:00 [ERR] Products served at: 24.05.2022 19:52:47
+2022-05-24 19:52:47.593 +03:00 [ERR] Products served at: 24.05.2022 19:52:47
+2022-05-24 19:52:47.751 +03:00 [ERR] Products served at: 24.05.2022 19:52:47
+2022-05-24 19:52:47.911 +03:00 [ERR] Products served at: 24.05.2022 19:52:47
+2022-05-24 19:52:48.089 +03:00 [ERR] Products served at: 24.05.2022 19:52:48
+2022-05-24 19:52:48.278 +03:00 [ERR] Products served at: 24.05.2022 19:52:48
+2022-05-24 19:52:48.423 +03:00 [ERR] Products served at: 24.05.2022 19:52:48
+2022-05-24 19:52:48.565 +03:00 [ERR] Products served at: 24.05.2022 19:52:48
+2022-05-24 19:52:49.969 +03:00 [ERR] Products served at: 24.05.2022 19:52:49
+2022-05-24 19:52:50.098 +03:00 [ERR] Products served at: 24.05.2022 19:52:50
+2022-05-24 19:52:50.218 +03:00 [ERR] Products served at: 24.05.2022 19:52:50
+2022-05-24 19:52:50.338 +03:00 [ERR] Products served at: 24.05.2022 19:52:50
+2022-05-24 19:52:50.455 +03:00 [ERR] Products served at: 24.05.2022 19:52:50
+2022-05-24 19:52:50.978 +03:00 [ERR] Products served at: 24.05.2022 19:52:50
+2022-05-24 19:52:52.109 +03:00 [ERR] Products served at: 24.05.2022 19:52:52
+2022-05-24 19:52:52.230 +03:00 [ERR] Products served at: 24.05.2022 19:52:52
+2022-05-24 19:52:54.022 +03:00 [ERR] Products served at: 24.05.2022 19:52:54
+2022-05-24 19:52:54.145 +03:00 [ERR] Products served at: 24.05.2022 19:52:54
+2022-05-24 19:52:56.258 +03:00 [ERR] Products served at: 24.05.2022 19:52:56
+2022-05-24 19:52:56.367 +03:00 [ERR] Products served at: 24.05.2022 19:52:56
+2022-05-24 19:52:56.483 +03:00 [ERR] Products served at: 24.05.2022 19:52:56
+2022-05-24 19:53:00.124 +03:00 [ERR] Products served at: 24.05.2022 19:53:00
+2022-05-24 19:53:00.249 +03:00 [ERR] Products served at: 24.05.2022 19:53:00
+2022-05-24 19:53:00.594 +03:00 [ERR] Products served at: 24.05.2022 19:53:00
+2022-05-24 19:53:00.708 +03:00 [ERR] Products served at: 24.05.2022 19:53:00
+2022-05-24 19:53:03.099 +03:00 [ERR] Products served at: 24.05.2022 19:53:03
+2022-05-24 19:53:03.219 +03:00 [ERR] Products served at: 24.05.2022 19:53:03
+2022-05-24 19:53:06.529 +03:00 [ERR] Products served at: 24.05.2022 19:53:06
+2022-05-24 19:53:06.662 +03:00 [ERR] Products served at: 24.05.2022 19:53:06
+2022-05-24 19:56:24.156 +03:00 [INF] Application is shutting down...
+2022-05-24 19:56:28.059 +03:00 [INF] Now listening on: https://localhost:5001
+2022-05-24 19:56:28.089 +03:00 [INF] Now listening on: http://localhost:5000
+2022-05-24 19:56:29.408 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-24 19:56:29.408 +03:00 [INF] Hosting environment: Development
+2022-05-24 19:56:29.408 +03:00 [INF] Content root path: D:\C# Projects\RetroShirtWeb\RetroShirt.API
+2022-05-24 19:56:42.292 +03:00 [INF] Application is shutting down...
+2022-05-24 19:57:00.114 +03:00 [INF] Now listening on: https://localhost:5001
+2022-05-24 19:57:00.150 +03:00 [INF] Now listening on: http://localhost:5000
+2022-05-24 19:57:01.770 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-24 19:57:01.770 +03:00 [INF] Hosting environment: Development
+2022-05-24 19:57:01.770 +03:00 [INF] Content root path: D:\C# Projects\RetroShirtWeb\RetroShirt.API
+2022-05-24 19:59:15.538 +03:00 [ERR] Products served at: 24.05.2022 19:59:15
+2022-05-24 19:59:20.900 +03:00 [INF] Application is shutting down...
+2022-05-24 20:00:24.478 +03:00 [INF] Now listening on: https://localhost:5001
+2022-05-24 20:00:24.513 +03:00 [INF] Now listening on: http://localhost:5000
+2022-05-24 20:00:26.060 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-05-24 20:00:26.060 +03:00 [INF] Hosting environment: Development
+2022-05-24 20:00:26.060 +03:00 [INF] Content root path: D:\C# Projects\RetroShirtWeb\RetroShirt.API
+2022-05-24 20:01:37.651 +03:00 [INF] Application is shutting down...
